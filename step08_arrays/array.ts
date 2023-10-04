@@ -1,4 +1,9 @@
 //Array declaration with different types
+// Alternate syntax
+let number:Array<number> = [23,34,45];
+let string:Array<string> = ["abc","xyz"];
+
+//Syntax 2
 let numberedArray:number[] = [1,2,3,4,5,6,7,8];
 console.log(numberedArray);
 
@@ -12,6 +17,12 @@ type newType = [number,string,number,string,boolean];
 
 let myArray:newType = [20,"abc",40,"xyz",true];
 console.log(myArray);
+
+//Asigning to new array syntax
+// let array4 = new number[2] //error
+let array3:number[] = new Array<number>(2);
+console.log(array3); //array3 contains 2 empty items
+
 
 //Array indexing
 //Index in array always start from 0
