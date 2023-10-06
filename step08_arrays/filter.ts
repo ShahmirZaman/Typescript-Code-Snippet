@@ -30,6 +30,29 @@ interface People {
             position:"Intern"
         },
     ]
+//Map method return undefined if the condition is false so for this reason we can used filter method
+
+// const names = people.map(function(value) {
+//     if(value.name === "john") {
+//         return console.log(value.name);
+//     }
+//     else {
+//         return console.log("Hello World");
+//     }
+// })
+// console.log(people);
+// console.log(names);
+
+// const nameCheck = people.filter((element) => {
+//     if(element.name === "John") {
+//         return console.log(element.name);
+//     }
+//     else {
+//         return console.log(element)
+//     }
+// })
+// console.log(nameCheck);
+
 // const youngPeople = people.filter(function(person){
 //     return person.age<= 25 && person.position === "developer";
 // })
@@ -56,5 +79,6 @@ const myNumber:number[] = [100,101,102,103,104];
 const filteredNumber : number[] = myNumber.filter(element => element > 102);
 console.log("Original Array: ",myNumber);
 console.log("Filtered Array: ",filteredNumber);
+
 
 

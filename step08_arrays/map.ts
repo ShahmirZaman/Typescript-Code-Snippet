@@ -3,28 +3,29 @@
 //does not change size of original array
 //uses values from original array when making new one 
 
-// interface People {
-//     name:string,
-//     age:number,
-//     position:string
-// }
-// const people:People[] = [
-//     {
-//         name:"bob",
-//         age:20,
-//         position:"developer"
-//     },
-//     {
-//         name:"peter",
-//         age:25,
-//         position:"designer"
-//     },
-//     {
-//         name:"bob",
-//         age:30,
-//         position:"the boss"
-//     }
-// ]
+interface People {
+    name:string,
+    age:number,
+    position:string
+}
+const people:People[] = [
+    {
+        name:"bob",
+        age:20,
+        position:"developer"
+    },
+    {
+        name:"peter",
+        age:25,
+        position:"designer"
+    },
+    {
+        name:"bob",
+        age:30,
+        position:"the boss"
+    }
+]
+
 // const messages = people.map(function(personValue) {
 //     // console.log(personValue);
 //     // return "Hello World"  
